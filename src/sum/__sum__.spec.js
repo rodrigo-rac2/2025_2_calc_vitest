@@ -21,10 +21,10 @@ test('adds until the INT limit negative in JS', () => {
     expect(sum(-Number.MAX_SAFE_INTEGER, -1)).toBe(-Number.MAX_SAFE_INTEGER - 1)
   })
 
-// test('sums a list of numbers', () => {
-//     expect(sumList([1, 2, 3, 4, 5])).toBe(15)
-//   })
+test('sums a list of numbers', () => {
+    expect(sumList([1, 2, 3, 4, 5])).toBe(15)
+  })
 
-// test('sums a list of numbers - negative test', () => {
-//     expect(sumList([1, 2, 3, 4, 5])).not.toBe(10)
-//   })
+test('sums a list of numbers - negative test', () => {
+    expect(sumList([1, 2, 3, 4, 5])).not.toBe(10)
+  })
