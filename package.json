@@ -1,0 +1,24 @@
+{
+  "name": "2025_2_calc_vitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigo-rac2/2025_2_calc_vitest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rodrigo-rac2/2025_2_calc_vitest/issues"
+  },
+  "homepage": "https://github.com/rodrigo-rac2/2025_2_calc_vitest#readme",
+  "devDependencies": {
+    "@vitest/coverage-v8": "^4.1.0",
+    "vitest": "^4.1.0"
+  }
+}
