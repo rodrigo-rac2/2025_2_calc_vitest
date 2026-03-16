@@ -1,0 +1,25 @@
+{
+  "name": "2025_2_calc_vitest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rodrigo-rac2/2025_2_calc_vitest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/rodrigo-rac2/2025_2_calc_vitest/issues"
+  },
+  "homepage": "https://github.com/rodrigo-rac2/2025_2_calc_vitest#readme",
+  "devDependencies": {
+    "vitest": "^4.1.0"
+  }
+}
