@@ -4,8 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "test": "vitest run",
     "test:watch": "vitest"
+=======
+    "test": "vitest run --coverage"
+>>>>>>> origin/main
   },
   "repository": {
     "type": "git",
@@ -14,12 +18,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "type": "module",
+=======
+>>>>>>> origin/main
   "bugs": {
     "url": "https://github.com/rodrigo-rac2/2025_2_calc_vitest/issues"
   },
   "homepage": "https://github.com/rodrigo-rac2/2025_2_calc_vitest#readme",
   "devDependencies": {
+<<<<<<< HEAD
+=======
+    "@vitest/coverage-v8": "^4.1.0",
+>>>>>>> origin/main
     "vitest": "^4.1.0"
   }
 }
