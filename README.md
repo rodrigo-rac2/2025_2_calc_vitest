@@ -12,6 +12,8 @@ Projeto didático para a disciplina de **Teste de Software** em cursos de gradua
 │   └── workflows/
 │       └── unit-tests.yml      # Pipeline de CI (GitHub Actions)
 ├── src/
+│   ├── calculator.js           # Módulo calculadora (add, subtract, multiply, divide)
+│   ├── calculator.test.js      # Testes unitários da calculadora (TDD demo)
 │   └── sum/
 │       ├── sum.js              # Código-fonte com as funções de soma
 │       └── __sum__.spec.js     # Testes unitários das funções de soma
@@ -25,7 +27,16 @@ Projeto didático para a disciplina de **Teste de Software** em cursos de gradua
 
 ## 🧮 Funcionalidades
 
-O módulo `src/sum/sum.js` exporta duas funções:
+### Módulo `src/calculator.js` — Calculadora completa (TDD demo)
+
+| Função | Descrição |
+|---|---|
+| `add(a, b)` | Retorna a soma de dois números. |
+| `subtract(a, b)` | Retorna a diferença entre dois números. |
+| `multiply(a, b)` | Retorna o produto de dois números. |
+| `divide(a, b)` | Retorna o quociente; lança erro em divisão por zero. |
+
+### Módulo `src/sum/sum.js` — Funções de soma
 
 | Função | Descrição |
 |---|---|
@@ -36,7 +47,11 @@ O módulo `src/sum/sum.js` exporta duas funções:
 
 ## 🧪 Testes Unitários
 
-Os testes estão em `src/sum/__sum__.spec.js` e cobrem os seguintes cenários:
+### Calculadora (`src/calculator.test.js`) — 15 testes
+
+Cobrem as quatro operações com entradas positivas, negativas e casos-limite (divisão por zero).
+
+### Soma (`src/sum/__sum__.spec.js`)
 
 | # | Cenário | Resultado Esperado |
 |---|---|---|
@@ -75,6 +90,12 @@ npm test
 
 O comando acima executa `vitest run --coverage`, que roda todos os testes e gera um relatório de cobertura de código.
 
+Para executar os testes em modo watch:
+
+```bash
+npm run test:watch
+```
+
 ---
 
 ## ⚙️ Integração Contínua (CI)
@@ -98,6 +119,7 @@ O projeto utiliza **GitHub Actions** para executar os testes automaticamente. O 
 Este projeto foi criado com fins educacionais e aborda os seguintes conceitos de teste de software:
 
 - **Testes unitários**: validação isolada de funções individuais
+- **Desenvolvimento orientado a testes (TDD)**: escrever testes antes do código
 - **Casos de teste positivos e negativos**: verificação de resultados corretos e incorretos
 - **Valores-limite (boundary values)**: testes com `0`, `Number.MAX_SAFE_INTEGER` e `-Number.MAX_SAFE_INTEGER`
 - **Cobertura de código**: medição de quanto do código-fonte é exercitado pelos testes
